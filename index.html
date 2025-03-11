@@ -37,15 +37,43 @@
     </nav>
   </header>
   <main>
+    <div id="button-container">
+      <button class="newPromo" onclick="openForm()">
+        <img src="./assets/images/IconAjou.png" alt="+" class="icon"> Ajouter une promotion
+      </button>
+    </div>
+
+    <!-- Formulaire qui s'affiche -->
+    <div id="form-container" class="form-container" style="display:none;">
+      <form id="promo-form">
+        <label for="promo-name">Nom de la promo:</label>
+        <input type="text" id="promo-name" name="promo-name" required><br><br>
+
+        <label for="start-date">Date de début:</label>
+        <input type="date" id="start-date" name="start-date" required><br><br>
+
+        <label for="end-date">Date de fin:</label>
+        <input type="date" id="end-date" name="end-date" required><br><br>
+
+        <button type="submit">Ajouter</button>
+        <button type="button" onclick="closeForm()">Annuler</button>
+      </form>
+    </div>
+
+    <div class="promoContainer">
+    </div>
+
     <script src="./assets/js/promo.js"></script>
   </main>
-  <footer>
+
+  <!-- <footer>
     <div class="logo">
       <a class="logo_accueil" href="./index.html">
         <img class="logo_school" src="./assets/images/Logo_OldSchool.png" alt="Logo de Old School">
       </a>
     </div>
-  </footer>
+  </footer> -->
+
 </body>
 
 </html>
