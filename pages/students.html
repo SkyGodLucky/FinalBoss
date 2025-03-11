@@ -37,6 +37,39 @@
     </nav>
   </header>
   <main>
+    <button id="addStudentBtn">Ajouter un élève</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>E-mail</th>
+          <th>Date de naissance</th>
+          <th>Promotion actuelle</th>
+          <th>Modifier</th>
+          <th>Supprimer</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody">
+      </tbody>
+    </table>
+
+    <div id="studentModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ajouter un étudiant</h2>
+        <input type="text" id="nom" placeholder="Nom">
+        <input type="text" id="prenom" placeholder="Prénom">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="date" id="dob" placeholder="jj/mm/aaaa">
+        <select id="promotion">
+          <option>Promo-mu</option>
+          <option>Promo-alt</option>
+        </select>
+        <button id="saveStudent">Enregistrer</button>
+        <p id="error-message"></p>
+      </div>
+    </div>
     <script src="../assets/js/students.js"></script>
   </main>
   <footer>
